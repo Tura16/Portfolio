@@ -495,16 +495,21 @@ body {
 
     .header__button:hover {
         transform: none;
-        
+        color: var(--color-text);
+        opacity: 0.7;
     }
 
     .header__button:hover::before {
         transform: none;
     }
 
+    .header__button::before {
+        content: none;
+        display: none;     
+    }
+
     .header__button:active {
         transform: scale(0.90);
-        color: var(--color-light);
     }
 
     .header__button:active::before {
@@ -538,7 +543,8 @@ body {
     }
 
     .my-project__block:active {
-        transform: scale(0.98);
+        transform: none;
+        opacity: 0.7;
     }
 
     .my-project__image-2 {
@@ -553,8 +559,14 @@ body {
         transform: scale(0.90);
     }
 
-    .soc1als__item:hover::before {
+    .soc1als__item::before {
         transform: none;
+        content: none;
+    }
+
+    .soc1als__item svg:hover {
+        fill: inherit;
+        opacity: 0.9;
     }
     
     .soc1als__item:active::before {
