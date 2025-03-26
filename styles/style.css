@@ -677,7 +677,7 @@ body {
     .about {
         flex-direction: column-reverse;
         row-gap: 60px;
-        padding-top: 130px;
+        padding-top: 100px;
         margin-bottom: 50px;
     }
 
