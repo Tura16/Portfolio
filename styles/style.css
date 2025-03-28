@@ -20,8 +20,9 @@
     --transition-transform: transform 0.2s ease;
     --transition-before: transform 0.7s ease;
 
-
     --border: 1px solid var(--color-dark);
+
+    --focus-visible: 2px dashed var(--color-dark); 
 }
 
 @keyframes loadingAnimation {
@@ -143,6 +144,10 @@ body {
     height: auto;
 }
 
+.header__logo:focus-visible {
+        outline: var(--focus-visible);
+}
+
 .nav__menu-list {
     display: flex;
     justify-content: center;
@@ -155,6 +160,10 @@ body {
     position: relative;
     font-size: clamp(16px, 1.25vw, 24px);
     transition: var(--transition-transform);
+}
+
+.nav__menu-link:focus-visible {
+    outline: var(--focus-visible);
 }
 
 .nav__menu-link:hover {
@@ -178,6 +187,10 @@ body {
     overflow: hidden;
     transition: var(--transition-transform);
     z-index: 1;
+}
+
+.header__button:focus-visible {
+    outline: var(--focus-visible);
 }
 
 .header__button::before {
@@ -360,6 +373,10 @@ body {
     aspect-ratio: 1; 
 }
 
+.my-project__link:focus-visible {
+    outline: var(--focus-visible);
+}
+
 .my-project__image-1,
 .my-project__image-2 {
     position: absolute;
@@ -447,8 +464,6 @@ body {
     transition: fill 0.2s ease;
 }
 
-
-
 .soc1als__item:hover {
     transform: scale(1.1);
 }
@@ -463,6 +478,10 @@ body {
 
 .soc1als__item:hover::before {
     transform: scaleY(1);
+}
+
+.soc1als__link:focus-visible {
+    outline: var(--focus-visible);
 }
 
 .soc1als__text {
@@ -518,6 +537,10 @@ body {
 
 .soc1als__button:active {
     transform: scale(0.90);
+}
+
+.soc1als__button:focus-visible {
+    outline: var(--focus-visible);
 }
 
 
