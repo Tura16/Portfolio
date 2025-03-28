@@ -441,11 +441,13 @@ body {
 }
 
 .soc1als__item svg{
-    width: 60px;
-    height: 60px;
-    padding: 12px;
+    width: 50px;
+    height: 50px;
+    padding: 8px;
     transition: fill 0.2s ease;
 }
+
+
 
 .soc1als__item:hover {
     transform: scale(1.1);
@@ -654,9 +656,9 @@ body {
 
     .nav__menu {
         position: absolute;
-        width: 200px;
+        width: 215px;
         top: 0;
-        left: -200px;
+        left: -215px;
         padding: 55px 15px 20px 30px;
         background-color: #C0C0C0;
         border-radius: 0 0 50px 0;
